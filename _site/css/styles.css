@@ -1,0 +1,59 @@
+body {
+  font-family: Broadsheet;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #fdfdfd;
+  color: #333;
+}
+
+
+
+header, footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0.4em;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+h1 {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+h2 {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
