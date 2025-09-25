@@ -101,16 +101,48 @@ h2 {
 }
 
 
+/* Episode cards */
 .episode-card {
   margin-bottom: 3em;
-  padding: 1em;
-  background-color: #f9f9f9;
-  border-left: 4px solid #dab400; /* mustard yellow */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 1.5em;
+  background-color: #000;       /* black background */
+  color: #fff;                  /* white text */
+  border-left: 4px solid #900000; /* keep red accent */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  text-align: left;
 }
 
+/* Titles inside episode cards */
 .episode-card h2 {
   margin-top: 0;
+  color: #900000; /* red stays */
+}
+
+/* Buttons inside episode cards */
+.episode-card .button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+
+.episode-card .button:hover {
+  background-color: #ccc;
+  color: #000;
+  border-color: #ccc;
+}
+
+/* Embedded audio player */
+.episode-card iframe,
+.episode-card audio {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 700px;   
+  height: 80px;       /* more compact */
+  border: none;
 }
 
 .home-link {
@@ -198,12 +230,14 @@ h2 {
 
 .nav-link:hover {
   color: #ccc;
+  text-decoration: none;
 }
 
 .nav-link.active {
   color: #900;         /* dark red for active link */
   cursor: default;
   pointer-events: none;
+  text-decoration: none;
 }
 
 
@@ -212,3 +246,13 @@ h2 {
 .top-nav {
   padding: 2rem 2rem;
 }
+
+
+.button .icon {
+  height: 2em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0em;
+}
+
+
