@@ -110,7 +110,7 @@ h2 {
   border-left: 4px solid #900000; /* keep red accent */
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   border-radius: 8px;
-  text-align: left;
+  text-align: centre;
 }
 
 /* Titles inside episode cards */
