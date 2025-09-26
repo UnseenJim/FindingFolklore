@@ -192,20 +192,25 @@ h2 {
 }
 
 /* 📱 Mobile breakpoint: stack buttons vertically */
+
+
 @media (max-width: 600px) {
   .splash-nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; /* reduce spacing when stacked */
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem; /* more spacing for fingers */
   }
 
   .splash-link {
-    width: 80%;          /* buttons take up most of the screen */
-    min-width: unset;    /* remove fixed min-width */
-    padding: 0.6em 1em;  /* reduce horizontal padding for mobile */
+    display: block;
+    width: 90%;          /* almost full width */
+    min-width: unset;
+    padding: 1em;        /* bigger buttons for tapping */
+    font-size: 1.1rem;   /* larger text on small screens */
     box-sizing: border-box;
   }
 }
+
 
 .splash-page main {
   padding-top: 3em;
