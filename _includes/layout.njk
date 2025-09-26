@@ -9,27 +9,35 @@
   <body class="{{ bodyClass | default('') }}">
 {% if not splash %}
 
-  <nav class="top-nav">
-    <div class="nav-left">
-      <a href="/"><img src="/images/FindingFolkloreinitialsWhite.png" alt="Logo" width="200" height"200" /></a>
-    </div>
-    <div class="nav-right">
-      {% if page.url == '/about/' %}
-        <span class="nav-link active">ABOUT</span>
-      {% else %}
-        <a href="/about" class="nav-link">ABOUT</a>
-      {% endif %}
+ <nav class="top-nav">
+  <div class="nav-left">
+    <a href="/"><img src="/images/FindingFolkloreinitialsWhite.png" alt="Logo" /></a>
+  </div>
 
-      {% if page.url == '/Season1/' %}
-        <span class="nav-link active">PODCAST</span>
-      {% else %}
-        <a href="/season1" class="nav-link">PODCAST</a>
-      {% endif %}
+  <!-- Hamburger toggle (mobile only) -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    ☰
+  </label>
 
-      <a href="https://www.youtube.com/@finding.folklore" class="nav-link">VIDEOS</a>
-<a href="https://www.amazon.co.uk/stores/Brice-Stratford/author/B09W5Z7PGM?" class="nav-link">BOOKS</a>
-    </div>
-  </nav>
+  <div class="nav-links">
+    {% if page.url == '/about/' %}
+      <span class="nav-link active">ABOUT</span>
+    {% else %}
+      <a href="/about" class="nav-link">ABOUT</a>
+    {% endif %}
+
+    {% if page.url == '/season1/' %}
+      <span class="nav-link active">PODCAST</span>
+    {% else %}
+      <a href="/season1" class="nav-link">PODCAST</a>
+    {% endif %}
+
+    <a href="https://www.youtube.com/@finding.folklore" class="nav-link">VIDEOS</a>
+    <a href="https://www.amazon.co.uk/stores/Brice-Stratford/author/B09W5Z7PGM?" class="nav-link">BOOKS</a>
+  </div>
+</nav>
+
 {% endif %}
   <div class="content-wrapper">
     <main>
