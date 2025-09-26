@@ -200,8 +200,10 @@ h2 {
   }
 
   .splash-link {
-    width: 80%;       /* buttons take up most of the screen */
-    min-width: unset; /* allow shrinking on small screens */
+    width: 80%;          /* buttons take up most of the screen */
+    min-width: unset;    /* remove fixed min-width */
+    padding: 0.6em 1em;  /* reduce horizontal padding for mobile */
+    box-sizing: border-box;
   }
 }
 
