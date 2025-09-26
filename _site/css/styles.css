@@ -191,6 +191,20 @@ h2 {
   text-decoration: none;
 }
 
+/* 📱 Mobile breakpoint: stack buttons vertically */
+@media (max-width: 600px) {
+  .splash-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* reduce spacing when stacked */
+  }
+
+  .splash-link {
+    width: 80%;       /* buttons take up most of the screen */
+    min-width: unset; /* allow shrinking on small screens */
+  }
+}
+
 .splash-page main {
   padding-top: 3em;
   padding-bottom: 8em;
