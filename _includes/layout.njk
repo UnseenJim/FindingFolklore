@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/acb1lax.css">
+<!-- Favicon (modern SVG + PNG fallbacks) -->
+<link rel="icon" type="image/svg+xml" href="/images/fav/LogoDark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/LogoDark32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/LogoDark16.png">
+
+<!-- iOS home screen -->
+<link rel="apple-touch-icon" href="/LogoDark180.png">
+
+<!-- Safari pinned tab (optional; uses your brand colour) -->
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dab400">
+
+<!-- (Optional) Web App Manifest -->
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#000000">
   </head>
   <body class="{{ bodyClass | default('') }}">
 {% if not splash %}
