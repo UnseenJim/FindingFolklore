@@ -169,24 +169,29 @@ h2 {
 }
 
 
+/* Fix buttons overflowing off-screen on desktop */
 .splash-nav {
   display: flex;
   justify-content: center;
-  gap: 5rem; 
-  margin: 2rem 0;
+  flex-wrap: wrap; /* allow wrapping if needed */
+  gap: 4%; /* use percentage-based gap instead of fixed rem */
+  margin: 2rem auto;
+  max-width: 90%; /* keeps content from stretching to edges */
 }
 
 .splash-link {
   display: inline-block;
-  padding: 0.3em 4em;
+  padding: 0.5em 3vw; /* padding scales with viewport width */
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: 1px solid transparent; 
-  margin: 0 1em;
+  border: 1px solid transparent;
+  margin: 0 1%; /* slight horizontal margin */
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  letter-spacing: 0.3em;  
+  letter-spacing: 0.3em;
+  white-space: nowrap; /* prevent awkward wrapping */
+  box-sizing: border-box;
 }
 
 .splash-link:hover {
@@ -197,27 +202,24 @@ h2 {
 }
 
 /* 📱 Mobile breakpoint: stack buttons vertically */
-
-
 @media (max-width: 600px) {
   .splash-nav {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 1rem; /* more spacing for fingers */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .splash-link {
-    display: block;
-    width: 85%;          /* almost full width */
-    min-width: unset;
+    width: 85%;
     max-width: 280px;
-    padding: 1em;        /* bigger buttons for tapping */
-    font-size: 1rem;   /* larger text on small screens */
-    box-sizing: border-box;
+    padding: 1em;
+    font-size: 1rem;
   }
+}
+
 
  .splash-page .logo {
-    max-width: 180px;  /* shrink from the desktop size */
+    max-width: 200px;  /* shrink from the desktop size */
     height: auto;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -243,7 +245,7 @@ h2 {
 }
 
 .splash-page .logo {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 /* === Top Navigation === */

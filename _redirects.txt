@@ -1,0 +1,2 @@
+http://* https://findingfolklore.org:443 301!
+https://www.findingfolklore.org/* https://findingfolklore.org/:splat 301!
