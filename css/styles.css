@@ -174,24 +174,27 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* allow wrapping if needed */
-  gap: 4%; /* use percentage-based gap instead of fixed rem */
+  gap: 3%; /* use percentage-based gap instead of fixed rem */
   margin: 2rem auto;
-  max-width: 90%; /* keeps content from stretching to edges */
+  max-width: 100%; /* keeps content from stretching to edges */
 }
 
 .splash-link {
-  display: inline-block;
-  padding: 0.5em 3vw; /* padding scales with viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1em 3.5vw; /* slightly less horizontal padding */
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: 1px solid transparent;
-  margin: 0 1%; /* slight horizontal margin */
+  border: 0.2px solid transparent;
+  margin: 0 2.5%;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  letter-spacing: 0.3em;
-  white-space: nowrap; /* prevent awkward wrapping */
+  letter-spacing: 0em; /* tone down spacing a touch for optical centering */
+  white-space: nowrap;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .splash-link:hover {
@@ -219,7 +222,7 @@ h2 {
 
 
  .splash-page .logo {
-    max-width: 200px;  /* shrink from the desktop size */
+    max-width: 300px;  /* shrink from the desktop size */
     height: auto;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
